@@ -8,6 +8,9 @@
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="form.css">
 
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
@@ -39,21 +42,31 @@
 
 <body>
 
-    <nav class="nav">
-        <a class="title" href="https://www.youtube.com/channel/UCBwmMxybNva6P_5VmxjzwqA">Apna College</a>
-        <div class="div-ul">
-            <ul>
-                <li>
-                    <i class="fas fa-home"></i> HOME
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" style="font-size: 50px;padding: 0 0 0 15px;" href="https://www.youtube.com/channel/UCBwmMxybNva6P_5VmxjzwqA">Apna College</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-home"></i> HOME</a>
+
                 </li>
-                <li>
-                    <i class="fas fa-phone-alt"></i> CONTACT
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> CONTACT
+                    </a>
                 </li>
-                <li>
-                    <i class="fas fa-question-circle"></i> ABOUT
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-question-circle"></i> ABOUT
+                    </a>
                 </li>
-                <li>
-                    <i class="fas fa-file-signature"></i> JOIN US
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-signature"></i> JOIN US
+                    </a>
                 </li>
             </ul>
         </div>
@@ -63,7 +76,7 @@
             <div class="heading-div">
                 <p class="heading">Ab </p>
                 <p class="heading">Education</p>
-                <p class="heading">Banega Paani<i class="fa fa-tint" aria-hidden="true"></i><i class="fa fa-tint" aria-hidden="true"></i><i class="fa fa-tint" aria-hidden="true"></i></p>
+                <p class="heading">Banega Paani...</p>
             </div>
             <div class="description-div">
                 <p class="description">We know Education is our Constitutional Right</p>
@@ -73,7 +86,10 @@
             </div>
         </div>
         <div class="sign-up">
-            <div id="sign-up-title">Sign Up</div>
+            <div id="sign-up-title">
+                Sign-Up
+                <p>Join the <span>Revolution</span></p>
+            </div>
             <div>
                 <form action="mailto:rahuljindal157@gmail.com" method="POST">
                     <div>
@@ -98,7 +114,7 @@
                         <input type="password" name="password" id="" placeholder="Create Password" required title="Password should contain atleast 3 numerals and 5 alphabets with one special character">
                     </div>
                     <div>
-                        <textarea name="reamrks" id="" cols="30" rows="10" required placeholder="Why You wanna join our community?"></textarea>
+                        <textarea name="reamrks" id="" cols="25" rows="5" required placeholder="Why You wanna join our community?"></textarea>
                     </div>
                     <div id="button">
                         <button type="submit">Join Now!</button>
@@ -111,10 +127,6 @@
                 </form>
             </div>
         </div>
-    </div>
-
-    <div id="bottom">
-
     </div>
     <footer>
         <p id="copyright">&copy; All Rights are Reserved</p>
@@ -143,6 +155,11 @@
         </div>
 
     </footer>
+
+    <!--bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Scripts-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
 </body>

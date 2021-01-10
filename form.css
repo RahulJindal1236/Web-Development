@@ -3,36 +3,40 @@ body {
 }
 
 
+/* buttons*/
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+
 /*Navbar CSS*/
 
-.nav {
+.navbar {
     background-color: #0275d8;
-    height: auto;
 }
 
-.title {
+.navbar-brand {
     font-family: 'East Sea Dokdo', cursive;
-    position: relative;
-    text-decoration: none;
-    font-size: 4.5rem;
     color: white;
-    padding: 15px 0 10px 75px;
 }
 
-.div-ul {
-    display: inline-block;
-    position: relative;
-    margin-left: 600px;
+.navbar-brand:hover {
+    font-size: 30px;
+    color: black;
 }
 
-.div-ul li {
-    display: inline-block;
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
     color: white;
-    margin: 0 15px 0 15px;
     font-family: 'Nunito', sans-serif;
 }
 
-.div-ul li:hover {
+.nav-link:hover {
+    color: black;
     text-decoration: underline;
     font-size: 1.2rem;
     font-weight: 500;
@@ -41,24 +45,44 @@ body {
 
 /*Middle Section CSS*/
 
+
+/*media query on middle section*/
+
+@media(max-width:900px) {
+    .content {
+        text-align: center;
+    }
+}
+
+@media(min-width:900px) {
+    .middle-section {
+        display: flex;
+    }
+    .content {
+        flex: 1;
+    }
+    .sign-up {
+        flex: 1;
+    }
+}
+
 .middle-section {
+    margin-top: 10px;
     background-color: #f7f7f7;
-    height: 600px;
+    margin-bottom: 5px;
+    justify-content: space-around;
 }
 
 .content {
-    display: inline-block;
-    width: 40%;
+    flex: 1.5;
+    padding-top: 150px;
     position: relative;
-    margin-bottom: 200px;
     height: auto;
 }
 
 .heading-div {
     position: relative;
-    ;
     margin-left: 85px;
-    margin-bottom: 310px;
 }
 
 .heading {
@@ -79,7 +103,7 @@ body {
 
 .description {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #d9534f;
 }
 
 
@@ -107,12 +131,8 @@ body {
 /*sign up form*/
 
 .sign-up {
+    flex: 1;
     background-color: white;
-    width: 35%;
-    display: inline-block;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 200px;
     border-radius: 15px;
 }
 
@@ -126,6 +146,17 @@ body {
     border-top-right-radius: 15px;
     margin-bottom: 15px;
     font-family: 'Palanquin', sans-serif;
+}
+
+#sign-up-title p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+#sign-up-title p span {
+    color: black;
 }
 
 #already-sign-in {
@@ -149,13 +180,13 @@ body {
 }
 
 input {
+    margin-bottom: 10rem;
     width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding: 12px;
     padding-left: 30px;
     border-radius: 15px;
     border: 1px solid grey;
+    outline: none;
 }
 
 form {
@@ -164,12 +195,12 @@ form {
 
 .form-icons {
     position: absolute;
-    margin-top: 22px;
+    margin-top: 12px;
     margin-left: 7px;
 }
 
 textarea {
-    width: 88.5%;
+    width: 86.5%;
     border-radius: 15px;
     padding: 0.5rem;
     margin-bottom: 5px;
@@ -182,22 +213,14 @@ textarea {
     border: none;
     font-size: 24px;
     color: white;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 
 /*FOOTER SECTION*/
 
-#bottom {
-    width: 100%;
-    height: 200px;
-    background-color: #0275d8;
-    margin-bottom: 0;
-}
-
 footer {
     margin-top: 0;
-    height: 200px;
     background-color: #bcbcc4;
     text-align: center;
     margin: 0;
@@ -205,7 +228,6 @@ footer {
 
 #copyright {
     font-size: 1rem;
-    margin-top: -2px;
     padding-top: 20px;
     padding-bottom: 7px;
 }
@@ -243,4 +265,14 @@ footer div {
 footer p {
     font-size: 1rem;
     margin: 0;
+}
+
+
+/*Adding responsiveness to footer ul*/
+
+@media(max-width:640px) {
+    footer ul li {
+        display: block;
+        border: none;
+    }
 }
